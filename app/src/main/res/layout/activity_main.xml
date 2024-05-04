@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#53AEF6"
+    tools:context=".MainActivity">
+
+    <!-- Replace with your actual drawable resource -->
+
+    <TextView
+        android:id="@+id/teleclima_title"
+        android:layout_width="292dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginBottom="188dp"
+        android:forceDarkAllowed="false"
+        android:text="TeleClima"
+        android:textAlignment="center"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:textColor="#FFF7F7"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewLogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/Creado_por_text"
+        android:layout_width="126dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="149dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="29dp"
+        android:forceDarkAllowed="false"
+        android:text="Creado por"
+        android:textAlignment="center"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:textColor="#FFF7F7"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonIngresar"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/codigo_text"
+        android:layout_width="88dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="450dp"
+        android:layout_marginTop="157dp"
+        android:layout_marginEnd="323dp"
+        android:layout_marginBottom="47dp"
+        android:forceDarkAllowed="false"
+        android:text="20175557"
+        android:textAlignment="center"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:textColor="#FFF7F7"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/codigo_text"
+        app:layout_constraintTop_toBottomOf="@+id/buttonIngresar"
+        tools:ignore="MissingConstraints,NotSibling" />
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="174dp"
+        android:layout_height="181dp"
+        android:layout_marginBottom="750dp"
+        android:contentDescription="@string/logo_sun"
+        android:src="@drawable/sun"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/codigo_text"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonIngresar"
+        android:layout_width="182dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="200dp"
+        android:backgroundTint="#0F1C67"
+        android:text="Ingresar"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:iconTint="#00BCD4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewLogo"
+        app:strokeColor="#00BCD4"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
